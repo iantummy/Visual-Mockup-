@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(Background.jpg);
+    animation: fade 2s infinite;
+    background-attachment: fixed;
+    background-size: cover;
+    animation: changeBackground 15s infinite;
+    
+}
+.Earth, .Sun, .Moon {
+    position: absolute;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: repeat-x;
+    box-shadow: inset 0px 0 10px rgba(0, 0, 0, 0.87), 0 0 10px rgb(67, 156, 207);
+    animation: rotation 15s linear infinite;
+    z-index: -1; /* Place the Earth and Sun behind the text */.Earth, .Sun {
+    position: absolute;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: repeat-x;
+    box-shadow: inset 0px 0 10px rgba(0, 0, 0, 0.87), 0 0 10px rgb(67, 156, 207);
+    animation: rotation 15s linear infinite;
+    z-index: -1; /* Place the Earth and Sun behind the text */
+    }
+}
+.Earth{
+    position: absolute;
+    top: 68%;
+    left: 21.5%;
+    transform: translate(-50%,-50%);
+    width: 520px;
+    height: 520px;
+    background:url(https://1.bp.blogspot.com/-UUXaK5GCj-k/UcsKJRMgkVI/AAAAAAAACfM/sePP_H08JTQ/s1600/1.jpg);
+    border-radius: 50%;
+    background-size:cover;
+    background-repeat: repeat-x;
+    box-shadow: inset 200px 0 55px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
+    animation: rotation 43s  linear infinite ;
+}
+ .Sun{
+    position: absolute;
+    top: 19%;
+    left: 87.4%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 300px;
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Map_of_the_full_sun.jpg/1280px-Map_of_the_full_sun.jpg");
+    border-radius: 50%;
+    background-size:cover;
+    background-repeat: repeat-x;
+    box-shadow: inset 0px 0 10px rgba(0, 0, 0, 0.5), 0 0 10px rgb(218, 140, 52);
+    animation: rotation 35s  linear infinite ;
+ }
+ .Moon{
+    position: absolute;
+    top: 77%;
+    left: 21.9%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    background-image:url("https://img1.cgtrader.com/items/702173/682fad2a11/large/92k-moon-color-map-3d-model.jpg");
+    border-radius: 50%;
+    background-size:cover;
+    background-repeat: repeat-x;
+    box-shadow: inset 50px 0 90px rgba(0, 0, 0, 0.85), 0 0 10px rgb(73, 72, 72);
+    animation: rotation 45s  linear infinite ;
+ }
+ @keyframes rotation {
+    0%{
+    background-position: 0 0;
+    }
+    100%{
+    background-position: -1280px 0;
+    }
+}
+header {
+    background-color: #252424;
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+    
+}
+
+nav ul li a {
+    border: 2px solid #2f83e2;
+    border-radius: 7px;
+    padding: 12px 20px;
+    margin: 0px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-size: 50;
+    transition: background-color 0.3s;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+nav ul li a:hover{
+    background-color: #ece4e49c;
+} 
+section {
+    padding: 20px;
+}
+h1{
+    font-size: 40px;
+    font: bold arial;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.description {
+    color: #fff;
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-right: 300px;
+    margin-bottom: 20px;
+    font-size: 23px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+hr{
+    position: inherit;
+    width: 20%;
+    margin-left: 10%;
+}
